@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oman Ryne - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Oman Ryne</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Oman Ryne</div>
+      <div class="hamburger-menu">
+        <button id="theme-toggle-mobile" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#gallery" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Oman Ryne profile picture" />
+        <div class="profile-circle"></div>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Oman Ryne</h1>
+        <div class="animated-text">
+          <span class="text sec-text">CyberSecurity Enthusiast</span>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Hire Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <div class="social-icon" onclick="location.href='https://www.linkedin.com/in/omanryne/'">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="social-icon" onclick="location.href='https://github.com/oman-ryne'">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="social-icon" onclick="location.href='https://www.instagram.com/oman.rynee.07/'">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="social-icon" onclick="location.href='mailto:omanryne60@gmail.com'">
+            <i class="fas fa-envelope"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-content">
+       <div class="about-image-text-container">
+        <div class="about-image-container">
+         <img src="./assets/about-pic.jpg" alt="Oman Ryne working" class="about-image">
+        </div>
+        <div class="about-text-container">
+         <p>
+          Hi, I'm Oman Ryne, a passionate web developer and cybersecurity enthusiast currently pursuing my bachelor's degree at Softwarica College of IT and E-Commerce.
+          I specialize in creating beautiful, functional, and secure web applications with modern technologies.
+         </p>
+      </div>
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <div class="icon-container">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Experience</h3>
+          <p>Intern</p>
+        </div>
+        <div class="details-container">
+          <div class="icon-container">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Education</h3>
+          <p>B.Sc. Ethical Hacking & CyberSecurity</p>
+        </div>
+        <div class="details-container">
+          <div class="icon-container">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Location</h3>
+          <p>Kathmandu, Nepal</p>
+        </div>
+      </div>
+      <div class="about-containers">
+        <div class="details-container">
+          <div class="icon-container">
+            <i class="fas fa-user"></i>
+          </div>
+          <h3>Age</h3>
+          <p>22</p>
+        </div>
+        <div class="details-container">
+          <div class="icon-container">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Languages</h3>
+          <p>English, Nepali, Hindi</p>
+        </div>
+        <div class="details-container">
+          <div class="icon-container">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Availability</h3>
+          <p>24/7</p>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="arrow-container" onclick="location.href='./#experience'">
+     <div class="arrow">
+       <span></span>
+       <span></span>
+       <span></span>
+      </div>
+     </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-container">
+        <div class="skills-section">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-icon-container">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div>
+                  <h3>HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                    <span>90%</span>
+                  </div>
+                </div>
+              </div>
+              <p class="skill-description">Semantic HTML, Accessibility, SEO Optimization</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-icon-container">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div>
+                  <h3>CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85%"></div>
+                    <span>85%</span>
+                  </div>
+                </div>
+              </div>
+              <p class="skill-description">Flexbox, Grid, Animations, Responsive Design</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-icon-container">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div>
+                  <h3>JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80%"></div>
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+              <p class="skill-description">ES6+, DOM Manipulation, Async Programming</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-icon-container">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div>
+                  <h3>React</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75%"></div>
+                    <span>75%</span>
+                  </div>
+                </div>
+              </div>
+              <p class="skill-description">Hooks, Context API, Component Lifecycle</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-icon-container">
+                  <i class="fab fa-python"></i>
+                </div>
+                <div>
+                  <h3>Python</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70%"></div>
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+              <p class="skill-description">Express, REST APIs, Authentication</p>
+            </div>
+            
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-icon-container">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div>
+                  <h3>Databases</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="65%"></div>
+                    <span>65%</span>
+                  </div>
+                </div>
+              </div>
+              <p class="skill-description">MySQL, MongoDB, Firebase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-container" onclick="location.href='./#gallery'">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <section id="gallery">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Gallery</h1>
+      <div class="gallery-container">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/Portfolio 2.o.png" alt="E-commerce Website" class="project-image">
+            
+          </div>
+          <div class="project-overlay">
+            <h3>Portfolio Website</h3>
+            <p>HTML, CSS & JavaScript</p>
+            <div class="project-links">
+              <a href="https://oman-ryne.github.io/Portfolio-2.0/" class="project-link">
+                <i class="fas fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/oman-ryne/Portfolio-2.0.git" class="project-link">
+                <i class="fas fa-code"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/Solar System.png" alt="Task Manager" class="project-image">
+            
+          </div>
+          <div class="project-overlay">
+            <h3>Solar System</h3>
+            <p>HTML, CSS & JavaScript</p>
+            <div class="project-links">
+              <a href="https://oman-ryne.github.io/Solar-System/" class="project-link">
+                <i class="fas fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/oman-ryne/Solar-System.git" class="project-link">
+                <i class="fas fa-code"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/3D Gallery.jpg" alt="Weather App" class="project-image">
+            
+          </div>
+          <div class="project-overlay">
+            <h3>3D Image Gallery</h3>
+            <p>HTML, CSS & JavaScript</p>
+            <div class="project-links">
+              <a href="https://oman-ryne.github.io/3D-Gallery/" class="project-link">
+                <i class="fas fa-eye"></i> Demo
+              </a>
+              <a href="https://github.com/oman-ryne/3D-Gallery.git" class="project-link">
+                <i class="fas fa-code"></i> Code 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-container" onclick="location.href='./#contact'">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <div class="contact-info-container">
+          <div class="contact-info-upper-container">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p><a href="mailto:omanryne60@gmail.com">omanryne60@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/omanryne/">linkedin.com/in/omanryne</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/oman-ryne">github.com/oman-ryne</a></p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p><a href="tel:+9779824778648">+977 9824778648</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+      </form>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456730050475!2d85.32001131506205!3d27.70520268279398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a64b5f13e1%3A0x28b2d0eacda46b98!2sKathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1620000000000!5m2!1sen!2snp" 
+          class="map-iframe" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <p>Copyright &#169; 2025 Oman Ryne. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#profile">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Skills</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

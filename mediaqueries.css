@@ -1,0 +1,162 @@
+/* mediaqueries.css */
+@media screen and (max-width: 1400px) {
+  section {
+    padding: 5rem 8rem;
+  }
+  
+  .section__pic-container {
+    height: 350px;
+    width: 350px;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  
+  #hamburger-nav {
+    display: flex;
+  }
+  
+  section {
+    padding: 4rem 5rem;
+  }
+  
+  .section__pic-container {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .map-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    padding: 4rem 3rem;
+  }
+  
+  .section__pic-container {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .animated-text .text {
+    font-size: 1.5rem;
+  }
+  
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .section__pic-container {
+    height: 220px;
+    width: 220px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .animated-text .text {
+    font-size: 1.3rem;
+  }
+  
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .about-containers {
+    flex-direction: column;
+  }
+  
+  .contact-info-card {
+    min-width: 100%;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .section__pic-container {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+}
